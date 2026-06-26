@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<news_database>
+  <categories>
+    <category id="all">Tất cả tin tức</category>
+    <category id="1">Tin tức hệ thống thu phí Hải Phòng</category>
+    <category id="2">Tin tức phần mềm Hải quan</category>
+    <category id="3">Tin tức liên quan hàng hóa XNK</category>
+    <category id="4">Tin tức hệ thống TP.HCM</category>
+  </categories>
+  <articles>
+    <article>
+      <id>1</id>
+      <title>Thông báo v/v triển khai vận hành thử nghiệm hệ thống thu phí sử dụng công trình, kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển trên môi trường thật - Không thu phí.</title>
+      <pubDate>2022-02-17</pubDate>
+      <summary>Căn cứ Nghị quyết số 10/2020/NQ-HĐND ngày 09 tháng 12 năm 2020 của Hội đồng nhân dân Thành phố về ban hành mức thu phí sử dụng kết cấu hạ tầng, công trình dịch vụ tiện ích công cộng trong khu vực cửa khẩu cảng biển trên địa bàn thành phố Hồ Chí Minh;</summary>
+      <category>4</category>
+      <author>Hệ thống thu phí TP.HCM</author>
+      <detailUrl>/detail/news_1.html</detailUrl>
+    </article>
+	<article>
+      <id>2</id>
+      <title>Thông báo v/v triển khai thực hiện thu phí sử dụng công trình, kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển trên địa bàn Thành phố Hồ Chí Minh theo Nghị quyết 07/2022/NQ-HĐND Ngày 07 tháng 07 năm 2022.</title>
+      <pubDate>2022-08-01</pubDate>
+      <summary>Ngày 26/07/2022, Cảng vụ đường thủy nội địa đã ra Thông báo số 1964/TB-CVĐTNĐ Về việc triển khai thực hiện thu phí sử dụng công trình, kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển trên địa bàn Thành phố Hồ Chí Minh theo Nghị quyết 07/2022/NQ-HĐND.</summary>
+      <category>4</category>
+      <author>Hệ thống thu phí TP.HCM</author>
+      <detailUrl>/detail/news_2.html</detailUrl>
+    </article>
+	<article>
+      <id>3</id>
+      <title>Thông báo v/v triển khai các giải pháp tích hợp, kết nối dữ liệu từ phần mềm quản lý dữ liệu nội bộ của Doanh nghiệp đến hệ thống khai báo Hải quan điện tử ECUS5VNACCS.</title>
+      <pubDate>2022-10-30</pubDate>
+      <summary>Công ty Thái Sơn đang triển khai các giải pháp tích hợp, kết nối dữ liệu từ phần mềm quản lý nội bộ của doanh nghiệp (hệ thống SAP, hệ thống ERP khác...) đến hệ thống khai báo Hải quan điện tử ECUS5VNACCS.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_3.html</detailUrl>
+    </article>
+	<article>
+      <id>4</id>
+      <title>Thông báo V/v nâng cấp hệ thống thu phí sử dụng công trình, kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển TP. Hồ Chí Minh.</title>
+      <pubDate>2022-11-24</pubDate>
+      <summary>Để đảm bảo tối ưu hệ thống thu phí sử dụng công trình, kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển (viết tắt là hệ thống thu phí) nhằm phục vụ tốt hơn cho cộng đồng doanh nghiệp, Cảng vụ Đường thủy nội địa Thành phố Hồ Chí Minh thực hiện nâng cấp hệ thống theo định kỳ.</summary>
+      <category>4</category>
+      <author>Hệ thống thu phí TP.HCM</author>
+      <detailUrl>/detail/news_4.html</detailUrl>
+    </article>
+	<article>
+      <id>5</id>
+      <title>Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí sử dụng công trình kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển Hải Phòng.</title>
+      <pubDate>2022-12-28</pubDate>
+      <summary>Căn cứ Nghị quyết số 21/NQ-HĐND ngày 09 tháng 12 năm 2022 của Hội đồng nhân dân Thành phố Hải phòng về việc sửa đổi, bổ sung Khoản 2 Điều 1 Nghị quyết số 148/2016/NQ-HĐND ngày 13 tháng 12 năm 2016 của Hội đồng nhân dân thành phố quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí sử dụng công trình kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển Hải phòng.</summary>
+      <category>1</category>
+      <author>Hệ thống thu phí Hải Phòng</author>
+      <detailUrl>/detail/news_5.html</detailUrl>
+    </article>
+	<article>
+      <id>6</id>
+      <title>Thông báo V/v tạm dừng xuất biên lai để cập nhật mẫu biên lai năm 2023.</title>
+      <pubDate>2022-12-28</pubDate>
+      <summary>Để cập nhật mẫu biên lai năm 2023 sử dụng thu phí sử dụng công trình, kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển, Cảng vụ Đường thủy nội địa TP Hồ Chí Minh thông báo về việc tạm dừng xuất biên lai để cập nhật mẫu biên lai mới năm 2023.
+Thời gian cập nhật mẫu biên lai: bắt đầu từ 22 giờ 45 phút đến 23 giờ 45 phút ngày 31 tháng 12 năm 2022.</summary>
+      <category>4</category>
+      <author>Hệ thống thu phí TP.HCM</author>
+      <detailUrl>/detail/news_6.html</detailUrl>
+    </article>
+	<article>
+      <id>7</id>
+      <title>Thông báo V/v áp dụng mã biểu thuế đối với các loại hàng hóa thuộc đối tượng chịu thuế GTGT với mức thuế suất 8% theo Nghị định số 44/2023/NĐ-CP.</title>
+      <pubDate>2023-06-30</pubDate>
+      <summary>Ngày 30/6/2023, Chính phủ đã ban hành Nghị định số 44/2023/NĐ-CP quy định chính sách giảm thuế GTGT theo Nghị quyết số 101/2023/QH15 ngày 24/6/2023 của Quốc hội. Nghị định số 44/2023/NĐ-CP có hiệu lực từ ngày 01/07/2023.</summary>
+      <category>3</category>
+      <author>Chính sách hàng hóa XNK</author>
+      <detailUrl>/detail/news_7.html</detailUrl>
+    </article>
+	<article>
+      <id>8</id>
+      <title>Thông báo V/v triển khai thu thập thông tin doanh nghiệp năm 2023 của Cục Hải quan TP.Hồ Chí Minh.</title>
+      <pubDate>2023-12-08</pubDate>
+      <summary>Căn cứ luật hải quan số 54/2014/QH14, Nghị định số 08/2015/NĐ-CP, Nghị định số 59/2018/NĐ-CP sửa đổi bổ sung, Thông tư số 38/2015/TT-BTC, Thông tư số 39/2018/TT-BTC, Thông tư số 81/2019/TT-BTC, Quyết định 2853/QĐ-TCHQ ngày 15/12/2022 và Quyết định số 20/QĐ-HQTPHCM ngày 09/01/2023 của Cục Hải quan TP.Hồ Chí Minh. Cục Hải quan TP.Hồ Chí Minh triển khai công tác thu thập thông tin trực tuyến tại địa chỉ https://ttttdn.hqhcm.gov.vn/</summary>
+      <category>3</category>
+      <author>Chính sách hàng hóa XNK</author>
+      <detailUrl>/detail/news_8.html</detailUrl>
+    </article>
+    <article>
+      <id>9</id>
+      <title>Thông báo cập nhật chức năng IN BẢNG KÊ MÃ VẠCH, PHƯƠNG TIỆN CHỨA HÀNG mới.</title>
+      <pubDate>2023-12-14</pubDate>
+      <summary>Phần mềm ECUS5VNACCS bổ sung chức năng IN BẢNG KÊ MÃ VẠCH, PHƯƠNG TIỆN CHỨA HÀNG với cách thức hoạt động mới giúp doanh nghiệp có thể tra cứu và in bảng kê mã vạch (đối với cả hàng Container, rời, lẻ cho tờ khai nhập khẩu, xuất khẩu và tờ khai OLA) ngay cả khi mạng khai báo TNTT bị lỗi.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_9.html</detailUrl>
+    </article>
+	<article>
+      <id>10</id>
+      <title>Thông báo v/v tạm dừng xuất biên lai để cập nhật mẫu biên lai 2024.</title>
+      <pubDate>2023-12-29</pubDate>
+      <summary>Để cập nhật mẫu biên lai năm 2024 trong công tác thu phí sử dụng công trình, kết cấu hạ tầng, công trình dịch vụ, tiện ích công cộng trong khu vực cửa khẩu cảng biển và công tác thu phí, lệ phí ra vào cảng biển, Cảng vụ Đường thủy nội địa TP. Hồ Chí Minh thông báo tạm dừng xuất biên lai để cập nhật mẫu mới năm 2024.</summary>
+      <category>4</category>
+      <author>Hệ thống thu phí TP.HCM</author>
+      <detailUrl>/detail/news_10.html</detailUrl>
+    </article>
+	<article>
+      <id>11</id>
+      <title>Giới thiệu và hướng dẫn chức năng nhập dữ liệu bằng giọng nói.</title>
+      <pubDate>2024-01-29</pubDate>
+      <summary>Chức năng nhập từ giọng nói đã có từ rất lâu trên các thế hệ windows XP, vista, windows 10, nhưng chưa hỗ trợ ngôn ngữ Tiếng Việt. Với phiên bản windows 11, chức năng đã được cải tiến, tích hợp công nghệ AI và hỗ trợ rất nhiều ngôn ngữ khác nhau, trong đó có Tiếng Việt.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_11.html</detailUrl>
+    </article>
+	<article>
+      <id>12</id>
+      <title>Thực hiện thủ tục hải quan tại Chi cục Hải quan cửa khẩu cảng Phú Mỹ.</title>
+      <pubDate>2024-04-03</pubDate>
+      <summary>Thực hiện Quyết định số 154/QĐ-HQCK của Cục Hải quan tỉnh Bà Rịa - Vũng Tàu, kể từ ngày 01/04/2024, Chi cục HQCK cảng Phú Mỹ chỉ còn 01 đội nghiệp vụ hải quan (mã đơn vị 51C1 - NVPMYBRVT) thực hiện các nghiệp vụ thông quan hàng hóa, quản lý hàng hóa gia công, sản xuất xuất khẩu.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_12.html</detailUrl>
+    </article>
+	<article>
+      <id>13</id>
+      <title>Thực hiện thủ tục hải quan loại hình GC, SXXK tại chi cục HQ Phú Mỹ.</title>
+      <pubDate>2024-04-25</pubDate>
+      <summary>Liên quan đến việc thay đổi chức năng, nhiệm vụ của các Đội nghiệp vụ thuộc Chi cục Hải quan cửa khẩu cảng Phú Mỹ, Chi cục thông báo về việc thực hiện thủ tục hải quan đối với loại hình Sản xuất xuất khẩu và loại hình gia công.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_13.html</detailUrl>
+    </article>
+	<article>
+      <id>14</id>
+      <title>Thông báo vv ngừng hỗ trợ dịch vụ trình ký trên các phiên bản phần mềm ECUS5VNACCS cũ</title>
+      <pubDate>2024-05-04</pubDate>
+      <summary>Từ ngày 01/07/2024 Công ty Thái Sơn sẽ ngừng hỗ trợ dịch vụ trình ký trên các phiên bản phần mềm ECUS5VNACCS cũ từ phiên bản 6.0 trở về trước.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_14.html</detailUrl>
+    </article>
+	<article>
+      <id>15</id>
+      <title>Thông báo vv gia hạn lại (cấp bù thời hạn) Chữ ký số CA2-Nacencom</title>
+      <pubDate>2024-11-04</pubDate>
+      <summary>Từ ngày 01/11/2024, Công ty Thái Sơn chính thức triển khai gia hạn lại (cấp bù thời hạn) cho chữ ký số (CA2) của doanh nghiệp đúng như ngày hết hạn trên hợp đồng theo sự cấp phép mới của Bộ thông tin và truyền thông.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_15.html</detailUrl>
+    </article>
+	<article>
+      <id>16</id>
+      <title>Thông báo vv áp dụng mã biểu thuế nhập khẩu ưu đãi đặc biệt mới B28</title>
+      <pubDate>2024-11-18</pubDate>
+      <summary>Thực hiện Nghị định số 131/2024/NĐ-CP của Chính Phủ về Biểu thuế nhập khẩu ưu đãi đặc biệt của Việt Nam để thực hiện Hiệp định thương mại tự do giữa Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam và Chính phủ Nhà nước I-xra-en giai đoạn 2024-2027 (sau đây gọi tắt là Hiệp định VIFTA), có hiệu thực thi hành từ ngày 15/10/2024.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_16.html</detailUrl>
+    </article>
+	<article>
+      <id>17</id>
+      <title>Thông báo V/v áp dụng mã biểu thuế VAT 8% theo Nghị định số 174/2024/QH15</title>
+      <pubDate>2024-12-31</pubDate>
+      <summary>Ngày 30/11/2024, Quốc hội đã ban hành Nghị quyết số 174/2024/QH15 cho phép tiếp tục thực hiện giảm thuế GTGT trong thời gian từ ngày 01/01/2025 đến hết ngày 30/06/2025.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_17.html</detailUrl>
+    </article>
+	<article>
+      <id>18</id>
+      <title>Thông báo V/v triển khai mô hình tổ chức Hải quan mới theo Quyết định 10/QĐ-CHQ.</title>
+      <pubDate>2025-03-13</pubDate>
+      <summary>Thực hiện chủ trương của Chính phủ và Bộ tài chính về việc thay đổi
+cơ cấu tổ chức ngành Hải quan Việt Nam trong thời gian tới. Theo đó, mô hình tổ chức của Hải quan được tổ chức và hoạt động theo 3 cấp: Cục Hải quan; Chi cục Hải quan khu vực; Hải quan cửa khẩu/ngoài cửa khẩu.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_18.html</detailUrl>
+    </article>
+	<article>
+      <id>19</id>
+      <title>Thông báo V/v triển khai tên đơn vị, mã Hải quan theo tổ chức bộ máy mới tại Chi cục Hải quan khu vực III (Hải Phòng)</title>
+      <pubDate>2025-03-13</pubDate>
+      <summary>Để thuận tiện cho việc khai báo thủ tục hải quan, Cục Hải quan thành phố Hải Phòng thông báo về tên đơn vị, mã hải quan của các đơn vị theo tổ chức bộ máy mới.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_19.html</detailUrl>
+    </article>
+	<article>
+      <id>20</id>
+      <title>Thông báo V/v triển khai tên đơn vị, mã Hải quan theo tổ chức bộ máy mới tại Chi cục Hải quan khu vực II (TP.Hồ Chí Minh)</title>
+      <pubDate>2025-03-14</pubDate>
+      <summary>Để thuận tiện cho việc khai báo thủ tục hải quan, Cục Hải quan thành phố Hồ Chí Minh thông báo về tên đơn vị, mã hải quan của các đơn vị theo tổ chức bộ máy mới.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_20.html</detailUrl>
+    </article>
+	<article>
+      <id>21</id>
+      <title>Thông báo V/v thay đổi thông tin đăng ký mã số đơn vị có quan hệ với Ngân sách</title>
+      <pubDate>2025-03-14</pubDate>
+      <summary>Thực hiện công văn số  79/CHQ-NVTHQ ngày 12/3/2025 của Cục Hải quan về việc thay đổi thông tin đăng ký mã số đơn vị có quan hệ với ngân sách. Cục Hải quan Hà Nam Ninh (Chi cục Hải quan Khu vực IV) báo cáo các thay đổi về mã số ĐVQHNS tại đơn vị.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_21.html</detailUrl>
+    </article>
+	<article>
+      <id>22</id>
+      <title>Thông báo V/v triển khai mô hình tổ chức bộ máy mới của Chi cục Hải quan khu vực XVI (Bình Dương)</title>
+      <pubDate>2025-03-14</pubDate>
+      <summary>Cục Hải quan tỉnh Bình Dương được cơ cấu thành Chi cục Hải quan khu vực XVI (địa bàn quản lý tỉnh Bình Dương, Tỉnh Bình Phước, tỉnh Tây Ninh) hoạt động theo mô hình tổ chức mới bắt đầu từ ngày 15/03/2025 với danh sách các mã và tên hải quan mới.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_22.html</detailUrl>
+    </article>
+	<article>
+      <id>23</id>
+      <title>Thông báo danh sách doanh nghiệp nợ quá hạn nộp phí Hải quan tại Chi cục Hải quan khu vực III (Hải Phòng)</title>
+      <pubDate>2025-04-19</pubDate>
+      <summary>Căn cứ dữ liệu theo dõi thu phí, đến thời điểm ngày 25/03/2025, một số doanh nghiệp vẫn còn nợ phí hải quan quá hạn theo quy định. 
+Để đảm bảo việc thực hiện nghĩa vụ tài chính đúng thời hạn và tránh ảnh hưởng đến quá trình làm thủ tục hải quan, Chi cục Hải quan khu vực III thông báo danh sách và đề nghị Quý Doanh nghiệp khẩn trương thực hiện nộp phí còn thiếu trong thời gian sớm nhất.</summary>
+      <category>1</category>
+      <author>Hệ thống thu phí Hải Phòng</author>
+      <detailUrl>/detail/news_23.html</detailUrl>
+    </article>
+	<article>
+      <id>24</id>
+      <title>Thông báo V/v Bổ sung mã bộ phận xử lý tờ khai trên hệ thống VNACCS.</title>
+      <pubDate>2025-04-23</pubDate>
+      <summary>Nhằm tạo thuận lợi trong việc khai báo hải quan theo cơ cấu tổ chức mới, cơ quan Hải quan đã bổ sung mã bộ phận xử lý tờ khai trên hệ thống VNACCS/VCIS tại Hải quan cửa khâu sân bay quốc tế Tân Sơn Nhất (02B1).</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_24.html</detailUrl>
+    </article>
+	<article>
+      <id>25</id>
+      <title>Thông báo V/v hướng dẫn xử lý lỗi hệ thống không tiếp nhận chứng từ thuộc bộ hồ sơ hải quan.</title>
+      <pubDate>2025-05-06</pubDate>
+      <summary>Hiện tại, Cục Hải quan đang phối hợp với các đơn vị có liên quan để kiểm tra xác định lỗi phát sinh và khắc phục tình trạng hệ thống không tiếp nhận các chứng từ thuộc hồ sơ hải quan. Trong khi chờ xử lý lỗi hệ thống, để kịp thời giải quyết thủ tục đối với hàng hóa xuất nhập khẩu, Cục Hải quan yêu cầu Chi cục Hải quan khu vực chỉ đạo Hải quan cửa khẩu/Hải quan ngoài cửa khẩu hướng dẫn người khai hải quan gửi kèm các chứng từ thuộc bộ hồ sơ hải quan bằng nghiệp vụ HYS thông qua Hệ thống khai hải quan điện tử theo hướng dẫn tại chỉ tiêu thông tin 1.63 mẫu số 01 Phụ lục II ban hành kèm Thông tư số 38/2015/TT-BTC ngày 25/3/2015 được sửa đổi, bổ sung tại Thông tư số 39/2018/TT-BTC ngày 20/4/2018 của Bộ Tài chính khi khai báo tờ khai xuất khẩu, nhập khẩu.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_25.html</detailUrl>
+    </article>
+	<article>
+      <id>26</id>
+      <title>Thông báo V/v triển khai Hệ thống dánh giá chất lượng phục vụ của công chức Chi cục Hải quan khu vực IV.</title>
+      <pubDate>2025-06-03</pubDate>
+      <summary>Triển khai công tác cải cách hiện đại hóa, phát triển mục tiêu Hải quan số của nghành Hải quan và thực hiện đúng cam kết trong "Tuyên ngôn phục vụ khách hàng", Chi cục Hải quan khu vực IV triển khai "Hệ thống đánh giá chất lượng phục vụ của công chức, đơn vị thuộc Chi cục Hải quan khu vực IV trong quá trình giải quyết thủ tục hải quan" (gọi tắt là Hệ thống) từ ngày 02/06/2025.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_26.html</detailUrl>
+    </article>
+	<article>
+      <id>27</id>
+      <title>Thông báo V/v đề nghị cấp mã bộ phận để tiếp nhận xử lý tờ khai theo nhóm (HQ KV I).</title>
+      <pubDate>2025-06-27</pubDate>
+      <summary>Thực hiện công văn số 9689/CHQ-CNTT ngày 19/06/2025 của Cục Hải quan về việc thực hiện tự động phân công công chức kiểm tra hồ sơ trên hệ thống VNACCS/VCIS, Chi cục Hải quan khu vực I đề nghị cấp mã bộ phận để tiếp nhận, xử lý tờ khai theo nhóm.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_27.html</detailUrl>
+    </article>
+	<article>
+      <id>28</id>
+      <title>Thông báo V/v thực hiện Nghị quyết số 204/2025/QH15 cho phép giảm thuế GTGT.</title>
+      <pubDate>2025-06-27</pubDate>
+      <summary>Ngày 17/06/2025, Quốc hội đã ban hành Nghị quyết số 204/2025/QH15 cho phép thực hiện giảm thuế giá trị gia tăng (GTGT) trong thời gian từ 01/07/2025 đến hết ngày 31/12/2026.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_28.html</detailUrl>
+    </article>
+	<article>
+      <id>29</id>
+      <title>Thông báo V/v tạm dừng tiếp nhận khai hải quan từ 22 giờ 30/06/2025 đến 05 giờ ngày 01/07/2025.</title>
+      <pubDate>2025-06-27</pubDate>
+      <summary>Từ ngày 30/06/2025, cơ quan Hải quan sẽ triển khai hệ thống công nghệ thông tin nhằm đáp ứng yêu cầu cơ cấu tổ chức bộ máy mới. Để chuẩn bị triển khai hệ thống, Cục Hải quan sẽ tạm dừng tiếp nhận khai hải quan từ 22 giờ ngày 30/06/2025 đến 05 giờ ngày 01/07/2025.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_29.html</detailUrl>
+    </article>
+	<article>
+      <id>30</id>
+      <title>Thông báo V/v thực hiện cập nhật địa chỉ trên hệ thống thu phí TP Hồ Chí Minh.</title>
+      <pubDate>2025-07-01</pubDate>
+      <summary>Từ ngày 01/07/2025 chính thức áp dụng mô hình tổ chức nhà nước 2 cấp trên toàn quốc, vì vậy Quý doanh nghiệp phải cập nhật địa chỉ theo danh mục địa bàn hành chính mới.</summary>
+      <category>4</category>
+      <author>Hệ thống thu phí TP.HCM</author>
+      <detailUrl>/detail/news_30.html</detailUrl>
+    </article>
+	<article>
+      <id>31</id>
+      <title>Thông báo V/v thực hiện cập nhật địa chỉ trên phần mềm ECUS.</title>
+      <pubDate>2025-07-01</pubDate>
+      <summary>Từ ngày 01/07/2025 chính thức áp dụng mô hình tổ chức nhà nước 2 cấp trên toàn quốc, vì vậy Quý doanh nghiệp phải cập nhật địa chỉ theo danh mục địa bàn hành chính mới.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_31.html</detailUrl>
+    </article>
+	<article>
+      <id>32</id>
+      <title>Thông báo v/v cập nhật và áp dụng biểu phí mới theo Nghị Quyết số 91/2025/NQ-HĐND TP Hồ Chí Minh.</title>
+      <pubDate>2026-01-05</pubDate>
+      <summary>Kính gửi Quý Doanh nghiệp.Thông báo về việc áp dụng mức thu phí mới theo quy định tại Nghị quyết số 91/2025/NQ-HĐND của Hội đồng nhân dân Thành phố Hồ Chí Minh, ban hành ngày 26/12/2025.</summary>
+      <category>4</category>
+      <author>Hệ thống thu phí TP.HCM</author>
+      <detailUrl>/detail/news_32.html</detailUrl>
+    </article>
+	<article>
+      <id>33</id>
+      <title>Thông báo vv áp dụng mã Bộ phận xử lý mới tại Hải quan 02CI.</title>
+      <pubDate>2026-03-15</pubDate>
+      <summary>Ngày 14/03/2026 Hải quan cửa khẩu Cảng Sài Gòn khu vực 1 ra Công văn số 4399/CKKV1-HHNK, thông báo về việc triển khai mã bộ phận xử lý tờ khai để thực hiện tự động phân công công chức kiểm tra hồ sơ hải quan.</summary>
+      <category>2</category>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_33.html</detailUrl>
+    </article>
+	<article>
+      <id>34</id>
+      <title>Thông báo Kế hoạch bảo trì hệ thống VNACCS/VCIS.</title>
+      <pubDate>2026-04-17</pubDate>
+      <summary>Thực hiện kế hoạch bảo trì hệ thống VNACCS/VCIS tại Trung tâm dữ liệu Hải quan - Cục Hải quan, Ban CNTT và Thông kê Hải quan thông báo kế hoạch thực hiên để các doanh nghiệp chủ động kế hoạch xuất nhập khẩu hàng hóa.</summary>
+      <category>2</category>
+	  <important>true</important>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_34.html</detailUrl>
+    </article>
+	<article>
+      <id>35</id>
+      <title>Thông báo quan trọng về việc cập nhật thay đổi mã đơn vị Hải quan.</title>
+      <pubDate>2026-05-25</pubDate>
+      <summary>Căn cứ kế hoạch triển khai đồng bộ bộ mã đơn vị hải quan tại Tờ trình <strong>261/TTr-CNTT</strong> ngày 13/5/2026 và nội dung Công văn số <strong>504/CNTT-QLVH</strong> ngày 22/05/2026. Từ ngày <strong>01/06/2026</strong>, Cục Hải quan thực hiện chuyển Hải quan khu vực quản lý và đổi mã Hải quan khai báo đối với 02 hải quan: <strong>02B1, 02DS (CCHQKV II hiện tại)</strong> sang <strong>06B1, 06DS</strong> mới và thuộc sự quản lý của CCHQKV XV.</summary>
+      <category>2</category>
+	  <important>true</important>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_35.html</detailUrl>
+    </article>
+    <article>
+      <id>36</id>
+      <title>Vv triển khai Đội thông quan tập trung tại Chi cục HQKV III.</title>
+      <pubDate>2026-05-25</pubDate>
+      <summary>Thực hiện các Quyết định số 681/QĐ-CHQ, 682/QĐ-CHQ và số 683/QĐ-CHQ ngày 04/5/2026 của Cục Hải quan về việc thành lập, quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đội Thông quan thuộc Chi cục Hải quan khu vực III.</summary>
+      <category>2</category>
+	  <important>true</important>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_36.html</detailUrl>
+    </article>
+	<article>
+      <id>37</id>
+      <title>Thông báo quan trọng về việc cập nhật thay đổi mã đơn vị Hải quan từ 01/07/2026.</title>
+      <pubDate>2026-06-25</pubDate>
+      <summary>Căn cứ kế hoạch triển khai đồng bộ bộ mã đơn vị hải quan tại Tờ trình 320/TTr-CNTT ngày 27/5/2026 và nội dung Công văn số 628/CNTT-QLVH ngày 19/06/2026. Từ ngày 01/07/2026, Cục Hải quan thực hiện cập nhật bộ mã Hải quan mới.</summary>
+      <category>2</category>
+	  <important>true</important>
+      <author>Phần mềm ECUS</author>
+      <detailUrl>/detail/news_37.html</detailUrl>
+    </article>
+  </articles>
+</news_database>

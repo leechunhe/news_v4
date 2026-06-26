@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vnaccs_database>
+  <codes>
+    <code>
+      <id>1</id>
+      <symbol>A11</symbol>
+      <name>Nhập kinh doanh tiêu dùng</name>
+      <type>Nhập khẩu</type>
+      <description>Sử dụng trong trường hợp doanh nghiệp nhập khẩu hàng hóa để tiêu dùng, kinh doanh thương mại đơn thuần theo quy định tại Nghị định của Chính phủ.</description>
+      <note>Yêu cầu nộp đủ các loại thuế Nhập khẩu, GTGT, TTĐB (nếu có) trước khi thông quan.</note>
+    </code>
+    <code>
+      <id>2</id>
+      <symbol>A12</symbol>
+      <name>Nhập kinh doanh sản xuất</name>
+      <type>Nhập khẩu</type>
+      <description>Sử dụng trong trường hợp doanh nghiệp Việt Nam nhập khẩu nguyên liệu, vật tư, máy móc thiết bị phục vụ sản xuất công nghiệp, tiểu thủ công nghiệp trong nước.</description>
+      <note>Hỗ trợ khai giảm thuế ưu đãi nếu có giấy chứng nhận xuất xứ (C/O) phù hợp.</note>
+    </code>
+    <code>
+      <id>3</id>
+      <symbol>B11</symbol>
+      <name>Xuất kinh doanh thương mại</name>
+      <type>Xuất khẩu</type>
+      <description>Sử dụng khi doanh nghiệp xuất khẩu hàng hóa ra nước ngoài hoặc xuất khẩu vào khu phi thuế quan theo hợp đồng mua bán thương mại thuần túy.</description>
+      <note>Kiểm tra điều kiện xuất khẩu xem mặt hàng có thuộc danh mục cấm hoặc quản lý chuyên ngành hay không.</note>
+    </code>
+    <code>
+      <id>4</id>
+      <symbol>E21</symbol>
+      <name>Nhập nguyên liệu để gia công cho thương nhân nước ngoài</name>
+      <type>Nhập khẩu - Miễn thuế</type>
+      <description>Áp dụng khi doanh nghiệp nhận gia công sản phẩm cho đối tác nước ngoài. Nguyên liệu nhập khẩu thuộc loại hình này được miễn thuế nhập khẩu tạm thời.</description>
+      <note>Bắt buộc làm báo cáo quyết toán tình hình sử dụng nguyên liệu định kỳ hàng năm tài chính.</note>
+    </code>
+    <code>
+      <id>5</id>
+      <symbol>E52</symbol>
+      <name>Xuất sản phẩm gia công cho thương nhân nước ngoài</name>
+      <type>Xuất khẩu - Miễn thuế</type>
+      <description>Áp dụng khi xuất khẩu sản phẩm đã hoàn thành gia công từ nguồn nguyên liệu nhập khẩu E21 trở lại cho thuê gia công hoặc bên chỉ định.</description>
+      <note>Cần đối chiếu định mức tiêu hao nguyên vật liệu đã khai báo với cơ quan Hải quan.</note>
+    </code>
+    <code>
+      <id>6</id>
+      <symbol>E11</symbol>
+      <name>Nhập nguyên liệu của doanh nghiệp chế xuất (DNCX)</name>
+      <type>Nhập khẩu - Miễn thuế</type>
+      <description>Áp dụng cho DNCX nhập khẩu từ nước ngoài hoặc từ nội địa nguyên liệu, vật tư để phục vụ hoạt động sản xuất kinh doanh.</description>
+      <note>Hàng hóa luân chuyển giữa nội địa và khu chế xuất bắt buộc phải mở tờ khai đối ứng.</note>
+    </code>
+    <code>
+      <id>7</id>
+      <symbol>G11</symbol>
+      <name>Tạm nhập hàng hóa kinh doanh tạm nhập tái xuất</name>
+      <type>Tạm nhập - Tái xuất</type>
+      <description>Hàng hóa đưa từ nước ngoài vào Việt Nam theo thủ tục tạm nhập, sau đó sẽ xuất khẩu nguyên trạng sang nước thứ ba.</description>
+      <note>Thời hạn tạm giữ thông thường là 60 ngày, được gia hạn không quá 2 lần, mỗi lần 30 ngày.</note>
+    </code>
+    <code>
+      <id>8</id>
+      <symbol>H11</symbol>
+      <name>Hàng hóa nhập khẩu khác</name>
+      <type>Nhập khẩu khác</type>
+      <description>Áp dụng cho hàng hóa phi mậu dịch, hàng quà biếu, quà tặng vượt định mức miễn thuế, hàng hóa của cơ quan ngoại giao dôi dư.</description>
+      <note>Không áp dụng cho mục đích kinh doanh thương mại thu lợi nhuận trực tiếp.</note>
+    </code>
+  </codes>
+</vnaccs_database>

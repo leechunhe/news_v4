@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tariff_database>
+  <tariffs>
+    <tariff>
+      <id>1</id>
+      <hsCode>8523.49.21</hsCode>
+      <productName>Phần mềm hệ thống điều khiển công nghiệp tích hợp</productName>
+      <category>Phần mềm</category>
+      <importTax>0%</importTax>
+      <vatTax>0%</vatTax>
+      <exportTax>0%</exportTax>
+      <description>Được nhập khẩu dưới dạng vật phẩm lưu trữ vật lý (HDD, USB) hoặc tải từ đám mây có giấy tờ bản quyền kèm theo.</description>
+    </tariff>
+    <tariff>
+      <id>2</id>
+      <hsCode>8542.31.00</hsCode>
+      <productName>Bộ xử lý trung tâm (CPU) và Chip xử lý đồ họa (GPU)</productName>
+      <category>Linh kiện điện tử</category>
+      <importTax>0%</importTax>
+      <vatTax>10%</vatTax>
+      <exportTax>0%</exportTax>
+      <description>Mạch tích hợp điện tử dạng đơn tinh thể bán dắt, chưa gắn thẻ nhớ lưu trữ ngoại vi ngoài mạch chính.</description>
+    </tariff>
+    <tariff>
+      <id>3</id>
+      <hsCode>8471.30.10</hsCode>
+      <productName>Máy tính xách tay (Laptop), bao gồm cả máy tính bảng bàn phím rời</productName>
+      <category>Thiết bị phần cứng</category>
+      <importTax>5%</importTax>
+      <vatTax>10%</vatTax>
+      <exportTax>0%</exportTax>
+      <description>Trọng lượng thực tế bao gồm pin không vượt quá 10kg, có cấu trúc bo mạch xử lý đầy đủ cổng kết nối.</description>
+    </tariff>
+    <tariff>
+      <id>4</id>
+      <hsCode>8471.50.10</hsCode>
+      <productName>Máy chủ xử lý dữ liệu đám mây công suất lớn (Server Host)</productName>
+      <category>Thiết bị phần cứng</category>
+      <importTax>0%</importTax>
+      <vatTax>10%</vatTax>
+      <exportTax>0%</exportTax>
+      <description>Thiết bị phần cứng trung tâm phục vụ lưu trữ mạng đám mây, hệ quản trị cơ sở dữ liệu doanh nghiệp lớn.</description>
+    </tariff>
+    <tariff>
+      <id>5</id>
+      <hsCode>8523.51.00</hsCode>
+      <productName>Thiết bị lưu trữ bán dẫn không bay hơi (SSD, Thẻ nhớ SD)</productName>
+      <category>Linh kiện điện tử</category>
+      <importTax>3%</importTax>
+      <vatTax>10%</vatTax>
+      <exportTax>0%</exportTax>
+      <description>Ổ cứng thể rắn tốc độ cao sử dụng công nghệ Flash ghi chồng dữ liệu đa chiều thông minh.</description>
+    </tariff>
+    <tariff>
+      <id>6</id>
+      <hsCode>8517.62.51</hsCode>
+      <productName>Thiết bị truyền phát Wi-Fi và Bộ định tuyến mạng băng thông rộng (Router)</productName>
+      <category>Thiết bị mạng</category>
+      <importTax>10%</importTax>
+      <vatTax>10%</vatTax>
+      <exportTax>0%</exportTax>
+      <description>Sử dụng sóng vô tuyến chuẩn AC/AX hoặc công nghệ sợi quang GPON phục vụ chuyển mạch hộ gia đình và doanh nghiệp.</description>
+    </tariff>
+    <tariff>
+      <id>7</id>
+      <hsCode>8504.40.90</hsCode>
+      <productName>Bộ lưu điện dự phòng công suất nhỏ dưới 2kVA (UPS)</productName>
+      <category>Thiết bị điện tử</category>
+      <importTax>15%</importTax>
+      <vatTax>10%</vatTax>
+      <exportTax>0%</exportTax>
+      <description>Thiết bị chuyển đổi biến tần lưu trữ năng lượng ắc quy cung cấp nguồn tức thời cho máy phát hoặc máy tính kế toán.</description>
+    </tariff>
+  </tariffs>
+</tariff_database>
