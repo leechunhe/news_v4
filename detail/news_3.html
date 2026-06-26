@@ -1,0 +1,58 @@
+<div class="space-y-6">
+  <!-- Article Header visual -->
+<!--  <div class="relative h-64 w-full rounded-2xl overflow-hidden shadow-md group">
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&auto=format&fit=crop" alt="Cập nhật ECUS5-VNACCS" class="w-full h-full object-cover" />
+    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6">
+      <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-500 text-white mb-2">Cập nhật phần mềm</span>
+      <h2 class="text-white font-bold text-2xl leading-snug">Cập nhật phần mềm khai hải quan điện tử ECUS5-VNACCS v10.6.2</h2>
+    </div>
+  </div>-->
+
+  <div class="prose max-w-none text-slate-800">
+    <div class="Doanvan"><strong>Kính chào quý doanh nghiệp, khách hàng!</strong>.</div>
+        <div class="Doanvan">Công ty <a href="https://thaison.vn/" target="_blank"><strong style="color:hsla(24,94%,56%,1.00)">THAISON</strong><strong style="color:hsla(229,93%,54%,1.00)">SOFT</strong></a> là đơn vị tiên phong trong lĩnh vực phát triển các phần mềm hành chính công điện tử, đặc biệt là Hải quan điện tử - với hơn 20 năm kinh nghiệm triển khai và hỗ trợ. Tính đến nay, công ty đang phục vụ hơn 100.000 khách hàng trên toàn quốc, với nhiều loại hình doanh nghiệp khác nhau, bao gồm:</div>
+        <div style="background-color:#72C4FF">
+        <ul style="list-style:square; margin-left:20px">
+        <li class="Doanvan">1. Các doanh nghiệp xuất nhập khẩu thông thường.</li>
+        <li class="Doanvan">2. Các doanh nghiệp là đại lý khai báo Hải quan.</li>
+        <li class="Doanvan">3. Các doanh nghiệp loại hình đặc thù Gia công, Sản xuất xuất khẩu, Chế xuất.</li>
+        <li class="Doanvan">4. Các doanh nghiệp chuyển phát nhanh (DHL, TNT, UPS...).</li>
+        </ul></div>
+        <div class="Doanvan">Hiện nay, công ty đang triển khai các giải pháp tích hợp, kết nối dữ liệu từ phần mềm quản lý nội bộ của doanh nghiệp (hệ thống SAP, hệ thống ERP khác...) đến hệ thống khai báo Hải quan điện tử ECUS5VNACCS.</div>
+        <div style="background-color:#E3F6FC" class="Doanvan"><strong>1. Mô hình tổng quát thể hiện như hình dưới đây:</strong></div>
+        <p align="left"><img src="detail/images/So do tich hop v2.png" /></p><br />
+        
+        <div style="background-color:#E3F6FC"  class="Doanvan"><strong>2. Giải thích cơ chế hoạt động:</strong></div>
+        <div class="Doanvan"><em><strong>a) Kết xuất dữ liệu từ hệ thống quản lý nội bộ.</strong></em></div>
+        <div class="Doanvan">Từ phần mềm quản lý nội bộ của doanh nghiệp (SAP, other ERP...) sẽ kết xuất dữ liệu ra các file với định dạng: JSON, XML, TXT hoặc EXCEL…</div>
+        <!--<p align="left"><img width="75%" src="detail/images/Gpth-b1.png" /></p>-->
+        <p align="left"><img width="75%" src="detail/images/Gpth-b1.1.png" /></p>
+        <div class="Doanvan"><em><strong>b) Đọc và phân tích dữ liệu.</strong></em></div>
+        <div class="Doanvan">Trên server tại doanh nghiệp sẽ cài đặt API hoặc đặt thư mục FTP (tùy theo yêu cầu và khảo sát thực tế của doanh nghiêp) để thực hiện lấy file dữ liệu đã kết xuất, sau đó tiến hành phân tích và tạo dữ liệu tờ khai nhập khẩu, xuất khẩu. Server này được kết nối tới hệ thống quản lý nội bộ thông qua mạng nội bộ LAN/WAN diện rộng.</div>
+        <!--<p align="left"><img width="75%" src="detail/images/Gpth-b2.png" /></p>-->
+        <p align="left"><img width="75%" src="detail/images/Gpth-b2.2.png" /></p>
+        <div class="Doanvan"><em><strong>c) Gửi dữ liệu đến hệ thống phần mềm ECUS5VNACCS.</strong></em></div>
+        <div class="Doanvan">Sau khi dữ liệu tờ khai được tạo sẽ gửi đến hệ thống phần mềm khai báo Hải quan ECUS5VNACCS để tiến hành khai báo đến cơ quan Hải quan. Hệ thống phần mềm khai báo ECUS có thể là tại chính doanh nghiệp hoặc tại các đơn vị khai thuê (Broker). Dữ liệu được gửi thông qua mạng WAN hoặc mạng internet.</div>
+		<!--<p align="left"><img width="75%" src="detail/images/Gpth-b3.png" /></p>-->
+        <p align="left"><img width="75%" src="detail/images/Gpth-b3.3.png" /></p>
+        <div class="Doanvan"><em><strong>d) Cập nhật kết quả khai báo.</strong></em></div>
+        <div class="Doanvan">Các kết quả khai báo sau khi nhận về từ Hải quan sẽ được cập nhật về hệ thống quản lý nội bộ để doanh nghiệp theo dõi.</div>
+        <div class="Doanvan"><em><strong>e) Quản lý dữ liệu đã khai báo.</strong></em></div>
+        <div class="Doanvan">Ngoài ra, doanh nghiệp có thể quản lý dữ liệu khai báo thông qua website quản lý khai báo. </div>
+        <!--<p align="left"><img width="75%" src="detail/images/Gpth-b5.png" /></p><br />-->
+        <p align="left"><img width="75%" src="detail/images/Gpth-b5.5.png" /></p><br />
+        <div style="background-color:#E3F6FC; padding-right:10pt; padding-top:10pt; padding-left:10pt; padding-bottom:10pt"><div class="Doanvan"><strong>3. CÁC LỢI ÍCH KHI SỬ DỤNG GIẢI PHÁP TÍCH HỢP.</strong></div>
+        <ul>
+        <ul style="list-style:circle; margin-left:30px">
+        	<li class="Doanvan">Khi sử dụng giải pháp sẽ giúp doanh nghiệp luân chuyển dữ liệu từ hệ thống quản lý nội bộ sang hệ thống khai báo Hải quan một cách tự động, giảm bớt được nhiều thời gian trong khâu lập dữ liệu tờ khai.</li>
+            <li class="Doanvan">Đảm bảo tính toàn vẹn dữ liệu, tránh được các sai sót khi luân chuyển dữ liệu giữa các bộ phận hoặc giữa doanh nghiệp với các đơn vị khai thuê khi chưa áp dụng giải pháp tích hợp.</li>
+            <li class="Doanvan">Với khả năng tự động phân tích và tạo lập dữ liệu tờ khai, hệ thống sẽ giúp doanh nghiệp khai báo, lấy kết quả khai báo lên đến vài trăm nghìn tờ khai mỗi ngày.</li>
+        </ul></ul>
+        </div><br />
+        <div class="Doanvan">Quý doanh nghiệp quan tâm đến giải pháp, xin vui lòng liên hệ bộ phận Kinh doanh công ty Thái Sơn theo số hotline:</div>
+        <div style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size:20px; font-weight:bold; text-align:justify"> - Miền Bắc: 19004767</div>
+        <div style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size:20px; font-weight:bold; text-align:justify"> - Miền Trung - Nam: 19004768</div>
+        <div class="Doanvan">Hoặc liên hệ các văn phòng, chi nhánh công ty nơi gần nhất.</div>
+        <!--<p align="left"><img width="15%" id="no-border" src="detail/images/Hand-icon.png" /></p>-->
+  </div>
+</div>

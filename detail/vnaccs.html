@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng danh mục chuẩn VNACCS</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .tab-active {
+            background-color: #004e89 !important;
+            color: white !important;
+            border-color: #f97316 !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 flex flex-col justify-between">
+
+    <!-- 1. SECTION: HORIZONTAL MENU BANNER (Menu Ngang) -->
+    <nav id="horizontal-menu-banner" class="bg-[#004e89] text-white shadow-lg border-b-2 border-orange-500 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                
+                <!-- Logo area -->
+                <a href="/" class="flex items-center space-x-3 cursor-pointer">
+                    <div id="rss-icon-wrapper" class="bg-orange-500 hover:bg-orange-600 transition-colors duration-200 p-2 rounded-lg text-white font-semibold flex items-center justify-center animate-pulse">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
+                        </svg>
+                    </div>
+                    <span id="brand-headline" class="font-display font-bold text-lg md:text-xl tracking-tight bg-gradient-to-r from-white via-slate-100 to-orange-200 bg-clip-text text-transparent flex items-center gap-2">
+                        ECUS<span class="text-orange-400 font-extrabold text-sm md:text-base px-1.5 py-0.5 rounded bg-slate-900/30">NEWS</span>
+                    </span>
+                </a>
+
+                <!-- Horizontal Navigation Items -->
+                <div id="menu-items-group" class="hidden md:flex items-center space-x-1 h-full">
+                    <a
+                        id="tab-news-btn"
+                        href="/?tab=news"
+                        class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center space-x-2 hover:bg-[#003d6d] text-slate-100 hover:text-white cursor-pointer"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>Tin tức mới</span>
+                    </a>
+
+                    <a
+                        id="tab-vnaccs-btn"
+                        href="/detail/vnaccs.html"
+                        class="px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-200 flex items-center space-x-2 bg-[#002f56] text-orange-400 border-b-2 border-orange-400 rounded-b-none"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <path d="m2 17 10 5 10-5"></path>
+                            <path d="m2 12 10 5 10-5"></path>
+                        </svg>
+                        <span>Bảng mã VNACCS</span>
+                    </a>
+
+                    <a
+                        id="tab-tariffs-btn"
+                        href="https://help.ecus.net.vn/BieuThueXNK/index.htm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center space-x-2 hover:bg-[#003d6d] text-slate-100 hover:text-white"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m16 16 3-8 3 8c-.1.3-.3.5-.6.5h-4.8c-.3 0-.5-.2-.6-.5z"></path>
+                            <path d="m2 16 3-8 3 8c-.1.3-.3.5-.6.5H3.8c-.3 0-.5-.2-.6-.5z"></path>
+                            <path d="M12 3v18"></path>
+                            <path d="M3 21h18"></path>
+                            <path d="M2 8h20"></path>
+                        </svg>
+                        <span>Biểu thuế XNK 2026</span>
+                        <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 3h6v6"></path>
+                            <path d="M10 14 21 3"></path>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        </svg>
+                    </a>
+
+                    <a
+                        id="tab-contact-btn"
+                        href="/?tab=contact"
+                        class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center space-x-2 hover:bg-[#003d6d] text-slate-100 hover:text-white cursor-pointer"
+                    >
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span>Liên hệ</span>
+                    </a>
+                </div>
+
+                <!-- Mobile design status button -->
+                <div class="md:hidden flex items-center">
+                    <span class="text-xs bg-[#002b4e] px-2.5 py-1 rounded-full border border-[#005fb8]/50 text-slate-300">
+                        Mobile: <strong class="text-orange-400">VIEW</strong>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile quick submenu scroll bar -->
+        <div id="mobile-subnavigation-scroller" class="flex md:hidden bg-[#003761] overflow-x-auto whitespace-nowrap border-t border-[#00284c]">
+            <div class="flex px-4 py-2 space-x-2 w-full justify-between text-xs items-center">
+                <a
+                    id="mobile-tab-btn-news"
+                    href="/?tab=news"
+                    class="px-3 py-1.5 rounded-full font-medium transition-colors text-slate-300 hover:text-white bg-[#002442]"
+                >
+                    Tin tức mới
+                </a>
+                <a
+                    id="mobile-tab-btn-vnaccs"
+                    href="/detail/vnaccs.html"
+                    class="px-3 py-1.5 rounded-full font-medium transition-colors bg-[#004e89] text-orange-400 border border-orange-400"
+                >
+                    Bảng mã VNACCS
+                </a>
+                <a
+                    id="mobile-tab-btn-tariffs"
+                    href="https://help.ecus.net.vn/BieuThueXNK/index.htm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="px-3 py-1.5 rounded-full font-medium transition-colors text-slate-300 hover:text-white bg-[#002442]"
+                >
+                    Biểu thuế 2026
+                </a>
+                <a
+                    id="mobile-tab-btn-contact"
+                    href="/?tab=contact"
+                    class="px-3 py-1.5 rounded-full font-medium transition-colors text-slate-300 hover:text-white bg-[#002442]"
+                >
+                    Liên hệ
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subheader info block for dynamic system feel -->
+    <header id="metadata-realtime-subheader" class="bg-white border-b border-slate-200 py-2.5 shadow-xs text-xs text-slate-500">
+        <div class="max-w-[960px] mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="inline-flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Trang cập nhật tin tức mới nhất về ECUS và chính sách XNK...</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span>Phiên bản: <strong class="text-slate-700 font-mono">2026.1.1</strong></span>
+                <span class="hidden md:inline text-slate-300">|</span>
+                <span>Ngày cập nhật: <span class="text-blue-600 font-semibold">Hôm nay</span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-[960px] w-full mx-auto px-4 sm:px-6 py-8 flex-1">
+        
+        <!-- Breadcrumbs & Heading -->
+        <section class="mb-6">
+            <nav class="flex text-xs text-slate-400 space-x-2 mb-3 font-medium" aria-label="Breadcrumb">
+                <a href="/" class="hover:text-blue-600">Trang chủ</a>
+                <span>&rarr;</span>
+                <span class="text-slate-600">Bảng danh mục chuẩn VNACCS</span>
+            </nav>
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center space-x-3 text-left">
+                    <img src="/public/Images/category-item.32.png" onerror="this.src='https://img.icons8.com/color/48/000000/opened-folder.png'" width="28" alt="Danh mục" class="flex-shrink-0" />
+                    <div>
+                        <h2 class="text-lg md:text-xl font-bold text-slate-900 flex flex-wrap items-center gap-2">
+                            <span>Bảng danh mục chuẩn VNACCS</span>
+                            <span class="text-xs font-semibold bg-red-50 text-red-600 px-2.5 py-0.5 rounded-full border border-red-100 animate-pulse">
+                                Cập nhật lần cuối: 26/02/2026
+                            </span>
+                        </h2>
+                        <p class="text-xs text-slate-500 mt-0.5">Tải về danh mục cơ sở dữ liệu định dạng bảng tính phục vụ khai báo phần mềm hải quan.</p>
+                    </div>
+                </div>
+                <div class="text-xs font-semibold text-slate-400 bg-slate-100 px-3 py-1.5 rounded-lg border">
+                    Hệ thống tự động đồng bộ hóa
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab Selection Navigation -->
+        <div class="flex border-b border-slate-200 mb-6 bg-white rounded-xl p-1.5 shadow-2xs gap-1">
+            <button onclick="openTab('tab1')" id="btn-tab1" class="flex-1 py-3 px-4 rounded-lg text-sm font-bold text-slate-600 hover:text-slate-950 hover:bg-slate-50 border-b-2 border-transparent transition-all duration-200 focus:outline-none flex items-center justify-center gap-2 cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"></path></svg>
+                <span>DANH MỤC THUẾ</span>
+            </button>
+            <button onclick="openTab('tab2')" id="btn-tab2" class="flex-1 py-3 px-4 rounded-lg text-sm font-bold text-slate-600 hover:text-slate-950 hover:bg-slate-50 border-b-2 border-transparent transition-all duration-200 focus:outline-none flex items-center justify-center gap-2 cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                <span>DANH MỤC TỔNG HỢP</span>
+            </button>
+            <button onclick="openTab('tab3')" id="btn-tab3" class="flex-1 py-3 px-4 rounded-lg text-sm font-bold text-slate-600 hover:text-slate-950 hover:bg-slate-50 border-b-2 border-transparent transition-all duration-200 focus:outline-none flex items-center justify-center gap-2 cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <span>ĐỊA DANH - ĐỊA ĐIỂM</span>
+            </button>
+        </div>
+
+        <!-- ==================== TAB 1: THUẾ ==================== -->
+        <div id="tab1" class="tab-content hidden transition-all duration-350">
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-blue-500 to-[#004e89] text-white">
+                                <th class="p-4 w-16 text-center font-bold">STT</th>
+                                <th class="p-4 pl-6 font-bold">Tên danh mục chi tiết</th>
+                                <th class="p-4 w-40 text-center font-bold">Tải về dữ liệu</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <!-- Row 1 -->
+                            <tr class="bg-blue-50/40">
+                                <td class="p-4 text-center font-bold text-[#004e89]">01</td>
+                                <td class="p-4 pl-6 font-bold text-slate-900 text-base" colspan="2">Mã miễn/giảm/không chịu thuế:</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã không chịu thuế NK bổ sung</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/870Khong thue - NK bo sung.xls" download="870Khong thue - NK bo sung.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã không chịu thuế TTĐB</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/638Khong thue - TTDB.xls" download="638Khong thue - TTDB.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã không chịu thuế GTGT</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/767Khong thue - GTGT.xls" download="767Khong thue - GTGT.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã không chịu thuế BVMT</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/Khong thue - BVMT.xls" download="Khong thue - BVMT.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã miễn-giảm-không chịu thuế XNK</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/Mien-Giam-Khong chiu thue XNK.xls" download="Mien-Giam-Khong chiu thue XNK.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">02</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã biểu thuế Chương 98</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/thue/Bieu thue chuong 98 - B02 và B17 cap nhat ND26.xls" download="Bieu thue chuong 98 - B02 và B17 cap nhat ND26.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr class="bg-blue-50/40">
+                                <td class="p-4 text-center font-bold text-[#004e89]">03</td>
+                                <td class="p-4 pl-6 font-bold text-slate-900 text-base" colspan="2">Mã áp dụng thuế suất/mức thuế và thu khác:</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã thuế suất chống bán phá giá</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/Bảng thuế CBPG 2026 (cập nhật ngày 26.02.2026).xls" download="Bảng thuế CBPG 2026 (cập nhật ngày 26.02.2026).xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã biểu thuế tự vệ</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/Bảng mã thuế tự vệ (cập nhật 21032023).xls" download="Bảng mã thuế tự vệ (cập nhật 21032023).xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã biểu thuế tiêu thụ đặc biệt</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/Ma Bieu thue Tieu thu dac biet - Luật 66.2025 - Bản 16.12 (2).xls" download="Ma Bieu thue Tieu thu dac biet - Luật 66.2025 - Bản 16.12 (2).xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã biểu thuế giá trị gia tăng</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/Thue khac - GTGT.xls" download="Thue khac - GTGT.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Mã biểu thuế bảo vệ môi trường</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/thue/Thue khac - BVMT.xls" download="Thue khac - BVMT.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">04</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã áp dụng mức thuế tuyệt đối</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/thue/Ap dung muc thue tuyet doi.xls" download="Ap dung muc thue tuyet doi.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 5 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">05</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã sắc thuế</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/thue/Sac thue.xls" download="Sac thue.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 6 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">06</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã thuế suất thuế nhập khẩu</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/thue/Ma thue suat thue NK.xls" download="Ma thue suat thue NK.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 7 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">07</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã biểu thuế</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/thue/Bieu thue.xls" download="Bieu thue.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== TAB 2: TỔNG HỢP ==================== -->
+        <div id="tab2" class="tab-content hidden transition-all duration-350">
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-blue-500 to-[#004e89] text-white">
+                                <th class="p-4 w-16 text-center font-bold">STT</th>
+                                <th class="p-4 pl-6 font-bold">Tên danh mục chi tiết</th>
+                                <th class="p-4 w-40 text-center font-bold">Tải về dữ liệu</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <!-- Row 1 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">01</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Đại lý Hải quan</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/DanhsachDaiLyHaiQuan.xls" download="DanhsachDaiLyHaiQuan.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors bg-blue-50/20">
+                                <td class="p-4 text-center font-bold text-[#004e89]">02</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">So sánh mã loại hình xuất khẩu VNACCS và E-Customs</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/So sanh ma loai hinh XK.doc" download="So sanh ma loai hinh XK.doc" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors border border-emerald-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .DOC</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">03</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">So sánh mã loại hình nhập khẩu VNACCS và E-Customs</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/So sanh ma loai hinh NK.doc" download="So sanh ma loai hinh NK.doc" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors border border-emerald-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .DOC</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors bg-blue-50/20">
+                                <td class="p-4 text-center font-bold text-[#004e89]">04</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã loại hình nhập khẩu, xuất khẩu</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/Loai hinh.doc" download="Loai hinh.doc" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-colors border border-emerald-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .DOC</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 5 Group -->
+                            <tr class="bg-blue-50/40">
+                                <td class="p-4 text-center font-bold text-[#004e89]">05</td>
+                                <td class="p-4 pl-6 font-bold text-slate-900 text-base" colspan="2">Mã hãng vận chuyển:</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Hãng tàu hỏa</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/tonghop/Hang tau hoa.xls" download="Hang tau hoa.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors bg-blue-50/10">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Hãng tàu biển</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/tonghop/Hang tau bien.xls" download="Hang tau bien.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Hãng hàng không</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/tonghop/Hang hang khong.xls" download="Hang hang khong.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 6 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">06</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã văn bản pháp quy khác và phân loại giấy phép</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/CẬP NHẬT MÃ VĂN BẢN 2025.xlsx" download="CẬP NHẬT MÃ VĂN BẢN 2025.xlsx" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-50 text-orange-750 hover:bg-orange-100 transition-colors border border-orange-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLSX</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 7 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors bg-blue-50/20">
+                                <td class="p-4 text-center font-bold text-[#004e89]">07</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã đánh dấu hàng hóa tại điểm khởi hành</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/Danh dau HH tai diem khoi hanh.xls" download="Danh dau HH tai diem khoi hanh.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 8 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">08</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã phân loại khai báo đính kèm điện tử (Phân loại thủ tục khai báo trong nghiệp vụ HYS)</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/File dinh kem.xls" download="File dinh kem.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 9 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors bg-blue-50/20">
+                                <td class="p-4 text-center font-bold text-[#004e89]">09</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã lý do hủy tờ khai</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/Ly do huy to khai.xls" download="Ly do huy to khai.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 10 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">10</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã loại kiện</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/Loai kien.xls" download="Loai kien.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 11 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors bg-blue-50/20">
+                                <td class="p-4 text-center font-bold text-[#004e89]">11</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã đơn vị tính</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/DVT.xls" download="DVT.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 12 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">12</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã tiền tệ</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/Tien te.xls" download="Tien te.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 13 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors bg-blue-50/20">
+                                <td class="p-4 text-center font-bold text-[#004e89]">13</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã nước</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/Nuoc.xls" download="Nuoc.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 14 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">14</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Mã Chi cục Hải quan - Đội thủ tục</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/tonghop/Don vi Hai quan ver 13.xlsx" download="Don vi Hai quan ver 13.xlsx" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-50 text-orange-750 hover:bg-orange-100 transition-colors border border-orange-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLSX</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== TAB 3: ĐỊA DANH - ĐỊA ĐIỂM ==================== -->
+        <div id="tab3" class="tab-content hidden transition-all duration-350">
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-blue-500 to-[#004e89] text-white">
+                                <th class="p-4 w-16 text-center font-bold">STT</th>
+                                <th class="p-4 pl-6 font-bold">Tên danh mục chi tiết</th>
+                                <th class="p-4 w-40 text-center font-bold">Tải về dữ liệu</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <!-- Row 1 -->
+                            <tr class="hover:bg-slate-50/30 transition-colors">
+                                <td class="p-4 text-center font-bold text-[#004e89]">01</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800">Vị trí xếp - dỡ hàng</td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/diadanh/Diem neo dau.xls" download="Diem neo dau.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2 Group -->
+                            <tr class="hover:bg-slate-50/30 transition-colors bg-blue-50/20">
+                                <td class="p-4 text-center font-bold text-[#004e89]">02</td>
+                                <td class="p-4 pl-6 font-bold text-slate-800 leading-relaxed text-justify">
+                                    Địa điểm lưu kho hàng chờ thông quan dự kiến, địa điểm trung chuyển cho vận chuyển bảo thuế, địa điểm đích cho vận chuyển bảo thuế (khai báo gộp/IDA/EDA) Địa điểm xếp hàng và dỡ hàng (Khu vực chịu sự giám sát hải quan, khai báo vận chuyển độc lập/OLA):
+                                </td>
+                                <td class="p-4 text-center">
+                                    <a href="catalogVnaccs/diadanh/Ma dia diem.xlsx" download="Ma dia diem.xlsx" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-50 text-orange-750 hover:bg-orange-100 transition-colors border border-orange-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLSX</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Địa điểm tập kết hàng hóa xuất nhập khẩu</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/diadanh/Ma dia diem.xlsx" download="Ma dia diem.xlsx" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-50 text-orange-750 hover:bg-orange-100 transition-colors border border-orange-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLSX</span>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 Group -->
+                            <tr class="bg-blue-50/40">
+                                <td class="p-4 text-center font-bold text-[#004e89]">03</td>
+                                <td class="p-4 pl-6 font-bold text-slate-900 text-base" colspan="2">Mã cảng/cửa khẩu/ga xếp hàng:</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Doanh nghiệp chế xuất</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/diadanh/DNCX.xls" download="DNCX.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors bg-blue-50/10">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Kho ngoại quan - kho CFS</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/diadanh/KhoNgoaiQuan-KhoCFS.xls" download="KhoNgoaiQuan-KhoCFS.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Sân bay nước ngoài</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/diadanh/San bay nuoc ngoai.xls" download="San bay nuoc ngoai.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors bg-blue-50/10">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Sân bay trong nước</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/diadanh/San bay trong nuoc.xls" download="San bay trong nuoc.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Cửa khẩu đường bộ - Ga đường sắt</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/diadanh/Cua khau duong bo - Ga.xls" download="Cua khau duong bo - Ga.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors bg-blue-50/10">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Cảng nước ngoài</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/diadanh/Cang nuoc ngoai.xls" download="Cang nuoc ngoai.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-3 text-center text-slate-400 font-mono">—</td>
+                                <td class="p-3 pl-10 text-slate-700 flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                                    <span>Cảng - ICD trong nước</span>
+                                </td>
+                                <td class="p-3 text-center">
+                                    <a href="catalogVnaccs/diadanh/Cang - ICD trong nuoc.xls" download="Cang - ICD trong nuoc.xls" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                        <span>Tải về .XLS</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footnote section for beautiful visual closure -->
+        <section class="bg-slate-900 text-slate-300 rounded-2xl p-6 md:p-8 mt-8 space-y-4">
+            <h3 class="text-base font-bold text-orange-400 flex items-center space-x-2">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>Hướng dẫn Nghiệp vụ Truyền dữ liệu VNACCS:</span>
+            </h3>
+            <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+                Người khai hải quan sử dụng các bảng mã chuẩn trên để nhập liệu vào các phân hệ nghiệp vụ tương ứng trên phần mềm khai hải quan điện tử <strong class="text-white">ECUS5-VNACCS</strong>. Mọi file dữ liệu đều được lưu trữ trực tiếp dưới dạng bảng tính Excel và tài liệu Word chính thống từ Tổng cục Hải quan, giúp doanh nghiệp tra cứu ngoại tuyến và import trực tiếp vào cơ sở dữ liệu nội bộ một cách trơn tru, hạn chế tối đa các sai sót thông tin thông quan.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Page Footer -->
+    <footer class="bg-slate-100 border-t border-slate-200 text-slate-500 py-6 text-center text-xs mt-12 w-full">
+        <p class="font-medium text-slate-700">© 2026 Cổng Nghiệp Vụ Số - Ban Biên Tập &amp; Phát Triển Cơ Sở Dữ Liệu</p>
+        <p class="mt-1">Tra cứu nhanh chóng - Chuẩn hóa thông tin - Tối ưu thủ tục hải quan</p>
+    </footer>
+
+    <!-- Tab Script -->
+    <script>
+        function openTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Deactivate all tab buttons
+            const buttons = document.querySelectorAll('[id^="btn-tab"]');
+            buttons.forEach(btn => {
+                btn.classList.remove('tab-active');
+            });
+
+            // Show current tab content and activate button
+            const activeContent = document.getElementById(tabId);
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+            }
+
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.add('tab-active');
+            }
+        }
+
+        // Initialize default tab on load
+        document.addEventListener('DOMContentLoaded', () => {
+            openTab('tab1');
+        });
+    </script>
+</body>
+</html>
