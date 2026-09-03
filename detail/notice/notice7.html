@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch họp trực tuyến hướng dẫn thủ tục C/O tự chứng nhận trong khu vực ASEAN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .notice-container {
+      width: 900px;
+      height: 800px;
+      max-width: 900px;
+      max-height: 800px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      padding: 32px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+    .notice-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .notice-container::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="notice-container" id="notice-root">
+    <div class="space-y-6">
+      <!-- Article Header visual -->
+      <div class="relative h-64 w-full rounded-2xl overflow-hidden shadow-md group">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1000&auto=format&fit=crop" alt="Hội thảo ASEAN" class="w-full h-full object-cover" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6">
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-500 text-white mb-2">Hội thảo & Đào tạo</span>
+          <h2 class="text-white font-bold text-2xl leading-snug">Hướng dẫn thủ tục C/O tự chứng nhận trong khu vực ASEAN</h2>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-slate-800">
+        <p class="font-semibold text-lg text-amber-950 mb-4">Vụ Hợp tác Quốc tế - Bộ Công Thương trân trọng kính mời quý doanh nghiệp:</p>
+        
+        <p class="mb-4">Nhằm phổ biến sâu rộng luật định và các nguyên tắc xuất xứ hàng hóa nội khối ASEAN theo thỏa thuận hợp tác thương mại điện tử ATIGA sửa đổi, Bộ Công Thương phối hợp cùng các đơn vị chuyên ngành tổ chức chương trình đào tạo trực tuyến.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <div class="bg-amber-50/60 border border-amber-200 p-5 rounded-2xl shadow-sm">
+            <span class="font-bold text-amber-950 flex items-center gap-1.5 mb-2">
+              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              Thời gian & Địa điểm:
+            </span>
+            <ul class="text-amber-900 text-sm space-y-1.5">
+              <li>📅 <strong>Ngày diễn ra:</strong> 20 tháng 06 năm 2026</li>
+              <li>⏰ <strong>Thời gian:</strong> 08:30 - 11:30 (Sáng Thứ Bảy)</li>
+              <li>📍 <strong>Hình thức:</strong> Trực tuyến qua Microsoft Teams & Zoom</li>
+            </ul>
+          </div>
+          
+          <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl shadow-sm">
+            <span class="font-bold text-slate-900 flex items-center gap-1.5 mb-2">
+              <svg class="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+              Nội dung thảo luận chính:
+            </span>
+            <ul class="text-slate-700 text-sm space-y-1.5">
+              <li>• Cách đăng ký Mã số Nhà xuất khẩu đủ điều kiện tự chứng nhận (Rex Code).</li>
+              <li>• Tra cứu nhanh chênh lệch dòng thuế ưu đãi đặc biệt qua cổng dữ liệu quốc gia.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mb-4">Doanh nghiệp đăng ký đại diện tham dự hoàn toàn miễn phí bằng cách quét mã QR hoặc truy cập trực tiếp đường link đính kèm trong thư mời điện tử được gửi từ Bộ Công Thương trước ngày 18/06/2026.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiêu đề thông báo</title>
+  <!-- Thư viện Tailwind CSS để dùng toàn bộ các class tiện ích như bg-blue-600, flex, p-4, shadow... -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tệp CSS chứa toàn bộ font chữ Be Vietnam Pro, màu sắc, thanh cuộn, thẻ table, p, blockquote giống trang News -->
+  <link rel="stylesheet" href="./notice.css">
+</head>
+<body>
+  <!-- Container cố định kích thước 900px x 800px -->
+  <div class="notice-container" id="notice-root">
+    <div class="space-y-6">
+      
+      <!-- Hình ảnh tiêu đề (tùy chọn) -->
+      <div class="relative h-60 w-full rounded-2xl overflow-hidden shadow-md group">
+        <img src="/images/customs_vnaccs.jpg" alt="Thông báo" class="w-full h-full object-cover" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6">
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-600 text-white mb-2">Chuyên mục thông báo</span>
+          <h2 class="text-white font-bold text-2xl leading-snug">Tiêu đề thông báo của bạn ở đây</h2>
+        </div>
+      </div>
+
+      <!-- Nội dung thông báo -->
+      <div class="prose max-w-none text-slate-800">
+        <p class="font-semibold text-lg text-slate-900 mb-4 leading-relaxed">
+          Kính gửi: Quý doanh nghiệp và đối tác,
+        </p>
+        
+        <p class="mb-4">
+          Nhập nội dung chi tiết thông báo của bạn vào đây. Bạn có thể sử dụng các thẻ HTML tiêu chuẩn như &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;, &lt;blockquote&gt;...
+        </p>
+
+        <!-- Hộp ghi chú / cảnh báo nổi bật (tùy chọn) -->
+        <div class="bg-blue-50/80 border-l-4 border-blue-600 p-5 my-6 rounded-r-xl">
+          <h4 class="font-bold text-blue-900 mb-1">Điểm lưu ý quan trọng:</h4>
+          <p class="text-blue-800 text-sm">Ghi chú nội dung cần nhấn mạnh cho người xem.</p>
+        </div>
+
+        <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-b pb-2">
+          Chi tiết hướng dẫn
+        </h3>
+        
+        <p class="mb-4">
+          Nội dung các mục tiếp theo...
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

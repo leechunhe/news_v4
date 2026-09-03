@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hướng dẫn sửa đổi biểu thuế suất xuất nhập khẩu áp dụng từ 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .notice-container {
+      width: 900px;
+      height: 800px;
+      max-width: 900px;
+      max-height: 800px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      padding: 32px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+    .notice-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .notice-container::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="notice-container" id="notice-root">
+    <div class="space-y-6">
+      <!-- Article Header visual -->
+      <div class="relative h-64 w-full rounded-2xl overflow-hidden shadow-md group">
+        <img src="/images/customs_vnaccs.jpg" alt="Biểu thuế suất xuất nhập khẩu" class="w-full h-full object-cover" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6">
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500 text-white mb-2">Thuế xuất nhập khẩu Việt Nam</span>
+          <h2 class="text-white font-bold text-2xl leading-snug">Hướng dẫn sửa đổi biểu thuế suất xuất nhập khẩu áp dụng từ 2026</h2>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-slate-800">
+        <p class="font-semibold text-lg text-emerald-950 mb-4">Tổng cục Thuế và Cục Giám sát quản lý về Thuế ban hành hướng dẫn Nghị định số 48/2026/NĐ-CP:</p>
+        
+        <p class="mb-4">Chính phủ vừa chính thức thông qua Nghị định số 48/2026/NĐ-CP điều chỉnh cơ cấu biểu thuế xuất khẩu, biểu thuế nhập khẩu ưu đãi, danh mục hàng hóa đặc biệt thuộc các Hiệp định thương mại tự do FTA đang có hiệu lực. Những thay đổi cốt lõi này tập trung thúc đẩy sản xuất công nghệ cao, sản xuất mạch tích hợp, bán dẫn, thiết bị kỹ thuật số và an ninh mạng.</p>
+        
+        <div class="bg-emerald-50/70 border-l-4 border-emerald-600 p-5 my-6 rounded-r-xl shadow-sm">
+          <h4 class="font-bold text-emerald-950 mb-1 flex items-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Mức thuế suất ưu đãi đặc biệt:
+          </h4>
+          <p class="text-emerald-900 font-medium">• Miễn thuế nhập khẩu còn 0% đối với linh kiện bán dẫn, IC và các chip xử lý đồ họa chuyên sâu phục vụ nghiên cứu trí tuệ nhân tạo (AI).</p>
+          <p class="text-emerald-900 font-medium mt-1">• Thuế xuất khẩu phần mềm bản quyền chính thức giảm từ 5% xuống chỉ còn 2% nhằm thúc đẩy xuất khẩu công nghệ phần mềm ra khối liên minh châu Âu.</p>
+        </div>
+        
+        <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 flex items-center gap-2 border-b pb-2">
+          <span class="w-1.5 h-6 bg-emerald-600 rounded-full inline-block"></span>
+          Bảng so sánh chi tiết biến động mã HS:
+        </h3>
+        
+        <div class="overflow-x-auto my-4 border border-slate-200 rounded-lg shadow-sm">
+          <table class="min-w-full divide-y divide-slate-200">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="px-4 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Mã HS</th>
+                <th class="px-4 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Mô tả hàng hóa công nghệ</th>
+                <th class="px-4 py-3 text-center text-xs font-bold text-slate-700 uppercase tracking-wider">Mức thuế cũ</th>
+                <th class="px-4 py-3 text-center text-xs font-bold text-slate-700 uppercase tracking-wider bg-emerald-50/50 text-emerald-800">Mức thuế 2026</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3 font-mono text-xs text-blue-900 font-semibold">8542.31.00</td>
+                <td class="px-4 py-3 text-sm text-slate-700">Bộ vi xử lý trung tâm (CPU), chip CMOS, bộ điều khiển bán dẫn thông minh</td>
+                <td class="px-4 py-3 text-center text-sm text-slate-500">3%</td>
+                <td class="px-4 py-3 text-center text-sm font-bold text-emerald-600 bg-emerald-50/20">0% (Miễn thuế)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3 font-mono text-xs text-blue-900 font-semibold">8523.49.21</td>
+                <td class="px-4 py-3 text-sm text-slate-700">Bộ phần mềm nhúng, hệ thống điều hành công nghiệp và giải thuật tự động hóa</td>
+                <td class="px-4 py-3 text-center text-sm text-slate-500">5%</td>
+                <td class="px-4 py-3 text-center text-sm font-bold text-emerald-600 bg-emerald-50/20">0% (Miễn thuế)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3 font-mono text-xs text-blue-900 font-semibold">8471.30.10</td>
+                <td class="px-4 py-3 text-sm text-slate-700">Máy tính xách tay (Laptop), có trọng lượng thô cả pin dưới 10kg</td>
+                <td class="px-4 py-3 text-center text-sm text-slate-500">10%</td>
+                <td class="px-4 py-3 text-center text-sm font-bold text-emerald-700 bg-emerald-50/20">5%</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="px-4 py-3 font-mono text-xs text-blue-900 font-semibold">8523.51.00</td>
+                <td class="px-4 py-3 text-sm text-slate-700">Ổ cứng lưu trữ thể rắn (SSD), bộ lưu trữ Flash bán dẫn công nghiệp</td>
+                <td class="px-4 py-3 text-center text-sm text-slate-500">5%</td>
+                <td class="px-4 py-3 text-center text-sm font-bold text-emerald-700 bg-emerald-50/20">3%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 flex items-center gap-2 border-b pb-2">
+          <span class="w-1.5 h-6 bg-emerald-600 rounded-full inline-block"></span>
+          Lưu ý nghiệp vụ cực kỳ quan trọng khi khai báo phần mềm ECUS
+        </h3>
+        <p class="mb-4">Khi làm tờ khai nhập khẩu mới trên phần mềm đầu cuối ECUS5, người khai báo thuế cần tra cứu đúng danh mục biểu thuế hiện hành được mã hóa bằng ký hiệu <strong>B26</strong> (viết tắt của Biểu thuế XNK phiên bản năm 2026). Nếu doanh nghiệp chọn nhầm biểu thuế năm cũ B25 hoặc B24, tờ khai sẽ ngay lập tức bị hệ thống Gateway Tổng cục chặn lại với mã lỗi từ chối áp giá thuế suất tự động.</p>
+        
+        <p class="mb-4">Doanh nghiệp thực hiện đúng theo các Thông tư và văn bản bổ trợ đính kèm của Bộ Công thương và Bộ tài chính để nhận được các ưu đãi hoàn thuế quan thiết thực nhất khi sản xuất xuất khẩu lắp ráp linh kiện vi mạch.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

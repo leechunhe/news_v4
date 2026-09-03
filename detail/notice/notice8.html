@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cảnh giác lỗ hổng zero-day trong trình quản lý CSDL Hải quan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .notice-container {
+      width: 900px;
+      height: 800px;
+      max-width: 900px;
+      max-height: 800px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      padding: 32px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+    .notice-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .notice-container::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="notice-container" id="notice-root">
+    <div class="space-y-6">
+      <!-- Article Header visual -->
+      <div class="relative h-64 w-full rounded-2xl overflow-hidden shadow-md group">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1000&auto=format&fit=crop" alt="Cảnh báo an ninh mạng" class="w-full h-full object-cover" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6">
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-red-600 text-white mb-2">Bảo mật - Mật báo</span>
+          <h2 class="text-white font-bold text-2xl leading-snug">Cảnh báo lỗ hổng zero-day trong trình quản lý CSDL Hải quan</h2>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-slate-800">
+        <p class="font-semibold text-lg text-red-900 mb-4">Cục An toàn thông tin và Trung tâm VNCERT phát đi công văn khẩn:</p>
+        
+        <p class="mb-4">Trung tâm Ứng cứu khẩn cấp không gian mạng Việt Nam (VNCERT/CC) chính thức ghi nhận mã hiệu lỗ hổng bảo mật <strong>CVE-2026-8910</strong> có mức độ nguy hại cực kỳ nghiêm trọng, liên quan đến tính năng thi hành mã lệnh từ xa trên hệ quản trị SQL và Access lưu trữ tờ khai của doanh nghiệp xuất nhập khẩu.</p>
+        
+        <div class="bg-red-50 border-l-4 border-red-500 p-5 my-6 rounded-r-xl">
+          <h4 class="font-bold text-red-950 mb-1">Khuyến cáo kỹ thuật xử lý khẩn cấp trước 24 giờ:</h4>
+          <ol class="list-decimal pl-5 mt-2 space-y-1.5 text-red-900 text-sm">
+            <li><strong>Ngắt kết nối cổng LAN/Internet không an toàn:</strong> Tạm thời chặn triệt để cổng kết nối truyền tải <code class="bg-white text-red-700 px-1.5 border rounded">1433</code> và <code class="bg-white text-red-700 px-1.5 border rounded">1434</code> đối với các dải địa điểm mạng Public ngoài văn phòng.</li>
+            <li><strong>Nâng cấp thuật toán mật khẩu:</strong> Loại bỏ tài khoản quản lý gốc SA mặc định, áp dụng xác thực mã hóa tích hợp để tránh tin tặc rà quét tự động.</li>
+          </ol>
+        </div>
+
+        <p class="mb-4">Bộ phận công nghệ thông tin tại các doanh nghiệp cần kiểm tra nhật ký truy cập máy chủ định kỳ nhằm phát hiện sớm các dấu hiệu hành vi xâm nhập, tải file thực thi lạ (.exe, .bat) nhằm mục đích bảo vệ an toàn tối đa cho hệ thống số liệu kế toán tài chính doanh nghiệp.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

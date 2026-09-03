@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sửa lỗi chữ ký số HSM trên hệ thống một cửa quốc gia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .notice-container {
+      width: 900px;
+      height: 800px;
+      max-width: 900px;
+      max-height: 800px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      padding: 32px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+    .notice-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .notice-container::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="notice-container" id="notice-root">
+    <div class="space-y-6">
+      <!-- Article Header visual -->
+      <div class="relative h-64 w-full rounded-2xl overflow-hidden shadow-md group">
+        <img src="/images/cyber_security.jpg" alt="Xử lý lỗi chữ ký số HSM" class="w-full h-full object-cover" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6">
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-cyan-600 text-white mb-2">Hỗ trợ kỹ thuật</span>
+          <h2 class="text-white font-bold text-2xl leading-snug">Sửa lỗi chữ ký số HSM trên hệ thống một cửa quốc gia</h2>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-slate-800">
+        <p class="font-semibold text-lg text-cyan-900 mb-4">Đội ngũ kỹ thuật Cổng thông tin một cửa Quốc gia (NSW) hướng dẫn chi tiết:</p>
+        
+        <p class="mb-4">Vừa qua, ban hỗ trợ NSW ghi nhận một số phản hồi từ doanh nghiệp logistics lớn về tình trạng gặp mã thông báo lỗi <strong class="text-red-600">"Signature verification failed (Error Code: 0x80090006)"</strong> khi ký số hàng loạt chứng từ tờ khai điện tử để thông quan liên ngành.</p>
+        
+        <div class="bg-slate-100 p-4 rounded-xl border border-slate-200 my-4">
+          <span class="font-bold text-slate-900 flex items-center gap-1.5 mb-1 text-sm uppercase">
+            <svg class="w-4 h-4 text-cyan-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+            Nguyên nhân trực tiếp:
+          </span>
+          <p class="text-slate-600 text-sm">Các đơn vị cấp phát mã hóa chứng thư (CA) đang triển khai nâng cấp phần cứng HSM sang dải khóa trung gian bảo mật cấp cao. Một số hệ thống máy tính lập tờ khai chưa đồng bộ được CA Root gốc của Ban cơ yếu chính phủ, dẫn tới Trình duyệt chặn gửi dữ liệu chữ ký số.</p>
+        </div>
+
+        <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 flex items-center gap-2 border-b pb-2">
+          <span class="w-1.5 h-6 bg-cyan-600 rounded-full inline-block"></span>
+          Các bước khắc phục xử lý hoàn toàn
+        </h3>
+        
+        <div class="space-y-4 my-6">
+          <div class="border p-5 rounded-xl bg-cyan-50/30 border-cyan-100 hover:border-cyan-300 transition-colors">
+            <span class="font-bold text-cyan-900 text-base">Bước 1: Cấu hình và cập nhật Plugin Ký số NSW Signer</span>
+            <p class="text-slate-600 text-sm mt-1.5">Truy cập Cổng thông tin hải quan, tải file <code class="bg-white px-2 py-0.5 rounded border font-mono">NSW_Signer_v4.2.msi</code>. Gỡ cài đặt hoàn toàn bản cũ trên ổ C và khởi động tiến trình cài đặt mới.</p>
+          </div>
+          
+          <div class="border p-5 rounded-xl bg-cyan-50/30 border-cyan-100 hover:border-cyan-300 transition-colors">
+            <span class="font-bold text-cyan-900 text-base">Bước 2: Xóa bộ nhớ đệm CA Certificates trong hệ điều hành Windows</span>
+            <p class="text-slate-600 text-sm mt-1.5">Mở hộp thoại Run (nhấn phím Windows + R), gõ câu lệnh <code class="bg-white px-2 py-0.5 rounded border font-mono">certmgr.msc</code> &rarr; Chọn thư mục <i>Personal &rarr; Certificates</i>. Tiến hành xóa bỏ các khóa đã hết hiệu lực từ năm ngoái nhằm tránh can nhiễu phần cứng HSM.</p>
+          </div>
+        </div>
+        
+        <p class="text-slate-500 italic mt-4 text-sm">Doanh nghiệp có nhu cầu hướng dẫn trực tuyến có thể kết nối với chuyên viên hỗ trợ công nghệ thông tin NSW qua các kênh Hotline tại chân trang web tập huấn.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

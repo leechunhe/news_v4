@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cập nhật phần mềm khai hải quan điện tử ECUS5-VNACCS nâng cao</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .notice-container {
+      width: 900px;
+      height: 800px;
+      max-width: 900px;
+      max-height: 800px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+      padding: 32px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+    .notice-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .notice-container::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    .notice-container::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="notice-container" id="notice-root">
+    <div class="space-y-6">
+      <!-- Article Header visual -->
+      <div class="relative h-64 w-full rounded-2xl overflow-hidden shadow-md group">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000&auto=format&fit=crop" alt="Cập nhật ECUS5-VNACCS" class="w-full h-full object-cover" />
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6">
+          <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-500 text-white mb-2">Cập nhật phần mềm</span>
+          <h2 class="text-white font-bold text-2xl leading-snug">Cập nhật phần mềm khai hải quan điện tử ECUS5-VNACCS v10.6.2</h2>
+        </div>
+      </div>
+
+      <div class="prose max-w-none text-slate-800">
+        <p class="font-semibold text-lg text-indigo-950 mb-4">Công ty Phát triển Phần mềm Công nghệ Hải quan Thái Sơn phát hành bản nâng cấp gấp:</p>
+        
+        <p class="mb-4">Hơn 90% doanh nghiệp xuất nhập khẩu tại Việt Nam hiện đang sử dụng giải pháp phần mềm thông quan <strong>ECUS5-VNACCS</strong> để nộp tờ khai. Nhằm hỗ trợ doanh nghiệp tương thích với hệ thống mã hóa hải quan VNACCS mới của Tổng cục Hải quan, Công ty Công nghệ Thái Sơn chính thức phát hành phiên bản khẩn cấp <strong>v10.6.2</strong> với nhiều cập nhật an ninh cốt lõi.</p>
+        
+        <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 flex items-center gap-2 border-b pb-2">
+          <span class="w-1.5 h-6 bg-indigo-600 rounded-full inline-block"></span>
+          Các cải tiến đột phá của phiên bản v10.6.2
+        </h3>
+        <ul class="list-disc pl-6 space-y-3 mb-6 text-slate-700">
+          <li>
+            <strong class="text-slate-950">Giải thuật ký điện tử siêu tốc HSM:</strong>
+            Mã hóa truyền gói tin được tối ưu hóa sâu, rút gọn thời gian xác thực chữ ký chữ ký số HSM từ 5 giây xuống chỉ còn dưới 1 giây cho mỗi tờ khai lớn có hàng trăm mặt hàng phụ lục.
+          </li>
+          <li>
+            <strong class="text-slate-950">Dynamic Download Bảng Mã:</strong>
+            Khi Hải quan cập nhật thông tư thuế mới, phần mềm tự hiển thị cửa sổ popup thông báo tải bảng mã tự động, xóa bỏ thủ tục truy cập website cơ quan quản lý tải tệp thô thủ công.
+          </li>
+          <li>
+            <strong class="text-slate-950">Vá triệt để lỗi "Runtime Error 43":</strong>
+            Giải quyết dứt điểm hiện tượng ngắt kết nối giữa chừng khi truyền tờ khai trong môi trường mạng không ổn định hoặc mất gói tin (packet loss).
+          </li>
+        </ul>
+
+        <div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-6 rounded shadow-sm">
+          <h4 class="font-bold text-amber-900 mb-1 flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            Cảnh báo ngắt kết nối chứng thư số cũ SHA-1
+          </h4>
+          <p class="text-amber-800">Các phiên bản ECUS cũ v10.5.x trở về trước sẽ bị hệ thống máy chủ Hải Quan từ chối kết nối bắt đầu từ ngày 01/07/2026. Nguyên nhân là do cấu trúc chữ ký số thuật toán băm SHA-1 lỗi thời bị hạ cấp, thay thế bằng chuẩn bảo mật SHA-256 nâng cao.</p>
+        </div>
+
+        <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 flex items-center gap-2 border-b pb-2">
+          <span class="w-1.5 h-6 bg-indigo-600 rounded-full inline-block"></span>
+          Hướng dẫn tải dữ liệu và cách sao lưu an toàn
+        </h3>
+        <p class="mb-4">Doanh nghiệp thực hiện các bước cụ thể sau:</p>
+        <ol class="list-decimal pl-6 space-y-2 mb-6 text-slate-700">
+          <li>Mở phần mềm ECUS5 hiện tại của bạn, chọn menu <strong>Trợ giúp</strong> &rarr; <strong>Kiểm tra phiên bản mới</strong> để hệ thống tự động tải.</li>
+          <li>Hoặc truy cập trực tiếp trang chủ của Thái Sơn tại địa chỉ <span class="bg-slate-100 font-mono px-2 py-0.5 rounded text-red-600 text-sm font-semibold">ecus.com.vn/download</span> và tải file cài đặt trực tuyến.</li>
+          <li><strong>Bắt buộc sao lưu CSDL:</strong> Trước khi chạy tệp nâng cấp <code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-slate-700 font-mono">ECUS5_Upgrade_10.6.2.exe</code>, doanh nghiệp cần tiến hành sao lưu cơ sở dữ liệu hiện hữu (dạng file SQL Server hoặc Access .mdb) để bảo đảm an toàn dữ liệu lịch sử.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
